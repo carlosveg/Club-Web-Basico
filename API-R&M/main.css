@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	background: rgb(214, 214, 214);
+	transition: all ease .3s; /* para que el cambio de theme no sea tan bruzco */
+}
+
+#spinner {
+	border: 0.5rem solid transparent;
+	width: 4rem;
+	height: 4rem;
+	border-right-color: #000;
+	border-left-color: #000;
+	border-radius: 50%;
+	animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+header {
+	border-bottom: 1px solid #000;
+	background: white;
+	color: black;
+	transition: all ease .3s; /* para que el cambio de theme no sea tan bruzco */
+}
+
+header .padre {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3rem;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+header .padre h1 {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+header .padre button {
+	font-size: 1.4rem;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-weight: normal;
+	color: #000;
+}
+
+#contenedor {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	max-width: 960px;
+	margin: 1rem auto;
+	flex-wrap: wrap;
+}
+
+#contenedor .card {
+	width: 24%;
+	margin: .5rem 0;
+	border: 1px solid #000;
+	background: white;
+	transition: all ease .3s; /* para que el cambio de theme no sea tan bruzco */
+}
+
+#contenedor .card img {
+	width: 100%;
+	max-width: 100%;
+}
+
+#contenedor .card h3 {
+	margin: .3rem;
+}
+
+#contenedor .card h4 {
+	margin: .3rem;
+	color: gray;
+	font-weight: 400;
+}
+
+/* MEDIA-QUERIES */
+/*
+    permiten aplicar estilos dependiendo el ancho de la ventana,
+    por ejemplo el width de nuestras cards
+*/
+
+@media (max-width: 767px) {
+	#contenedor .card {
+		width: 32%;
+	}
+}
+
+@media (max-width: 600px) {
+	#contenedor .card {
+		width: 49%;
+	}
+}
+
+@media (max-width: 500px) {
+	#contenedor .card {
+		width: 100%;
+	}
+}
+
+/* DARK THEME */
+/*
+    Solo tenemos que agregarle a la etiqueda <body>
+    la clase "dark" por ejemplo, y a partir de ahi
+    modificar los elementos dentro de el.
+*/
+
+body.dark {
+	background: #000;
+	color: #f2f2f2;
+}
+
+body.dark header {
+	border-bottom: 1px solid #363636;
+	background: rgb(32, 32, 32);
+	color: #f2f2f2;
+}
+
+body.dark header .padre button {
+	color: #f2f2f2;
+}
+
+body.dark #spinner {
+	border-left-color: #f2f2f2;
+	border-right-color: #f2f2f2;
+}
+
+body.dark #contenedor .card {
+	background: rgb(32, 32, 32);
+	border: 1px solid #363636;
+	color: #f2f2f2;
+}
