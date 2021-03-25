@@ -22,10 +22,12 @@ form {
   flex-wrap: wrap;
 }
 
-form #text {
+form #course,
+form #task {
   padding: 0.5rem;
   text-align: center;
   border-radius: 5px;
+  margin: 0.5rem;
 }
 
 form .btn {
@@ -64,11 +66,15 @@ form .btn:hover {
   word-wrap: break-word;
 }
 
-#list li > span {
+#list li .secondary {
+  color: grey;
+}
+
+#list li .delete {
   color: red;
   align-self: flex-end;
 }
 
-#list li > span:hover {
+#list li .delete:hover {
   cursor: pointer;
 }

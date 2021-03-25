@@ -1,16 +1,22 @@
 // Variables
 const form = document.querySelector("#form");
-const input = document.querySelector("#text");
+const course = document.querySelector("#course");
+const task = document.querySelector("#task");
 const list = document.querySelector("#list");
 const tareas = [];
 
 // Functiones
 const agregarNuevaTarea = () => {
-  const nuevaTarea = input.value;
-  if (nuevaTarea && nuevaTarea.length > 0) {
-    tareas.push(nuevaTarea);
+  const nuevaMateria = course.value;
+  const nuevaTarea = task.value;
+
+  if ((nuevaTarea && nuevaTarea.length > 0) && (nuevaMateria && nuevaMateria.length > 0)) {
+    tareas.push({ nuevaMateria, nuevaTarea });
   }
-  input.value = "";
+
+  console.log(tareas)
+  course.value = "";
+  task.value = "";
 };
 
 const mostrarTareas = () => {
@@ -21,8 +27,12 @@ const mostrarTareas = () => {
   list.innerHTML = html;
 };
 
-const generarUnaTarea = (tarea, id) => {
-  return `<li id="t${id}">${tarea} <span onclick="eliminarTarea(${id})">🗑</span></li>`;
+const generarUnaTarea = ({ nuevaMateria, nuevaTarea }, id) => {
+  return `<li id="t${id}">
+            Materia: <span class="secondary">${nuevaMateria}</span>
+            Tarea: <span class="secondary">${nuevaTarea}</span>
+            <span class="delete" onclick="eliminarTarea(${id})">🗑</span>
+          </li>`;
 };
 
 const eliminarTarea = (id) => {
