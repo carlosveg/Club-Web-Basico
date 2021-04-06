@@ -2,7 +2,7 @@
 ## Ejercicios/Tareas realizados en el club de desarrollo web de la ESCOM
 
 - First Card
-![Imagen de ejemplo primera card](/examples_img//card.png)
+![Imagen de ejemplo primera card](examples_img//card.png)
 
 - API Rick & Morty
 ![Imagen de ejemplo consumo API Rick & Morty](examples_img/API\Rick\and\Morty.png)
