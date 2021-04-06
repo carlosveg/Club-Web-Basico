@@ -5,7 +5,7 @@
 ![Imagen de ejemplo primera card](examples_img//card.png)
 
 - API Rick & Morty
-![Imagen de ejemplo consumo API Rick & Morty](examples_img/API\Rick\and\Morty.png)
+![Imagen de ejemplo consumo API Rick & Morty](examples_img/API_Rick_and_Morty.png)
 
 - Tasks App
 ![Imagen de ejemplo App Tasks](examples_img/Tasks.png)
