@@ -2,13 +2,13 @@
 ## Ejercicios/Tareas realizados en el club de desarrollo web de la ESCOM
 
 - First Card
-![Imagen de ejemplo primera card](/examples_ img/card.png)
+![Imagen de ejemplo primera card](/examples_img//card.png)
 
 - API Rick & Morty
-![Imagen de ejemplo consumo API Rick & Morty](examples_ img/API\Rick\and\Morty.png)
+![Imagen de ejemplo consumo API Rick & Morty](examples_img/API\Rick\and\Morty.png)
 
 - Tasks App
-![Imagen de ejemplo App Tasks](examples_ img/Tasks.png)
+![Imagen de ejemplo App Tasks](examples_img/Tasks.png)
 
 - API NASA
-![Imagen de ejemplo consumo API NASA](examples_ img/consumo_api.png)
+![Imagen de ejemplo consumo API NASA](examples_img/consumo_api.png)
