@@ -1,0 +1,16 @@
+@import "mixins";
+
+header {
+  width: 100vw;
+  background: white;
+  height: 4rem;
+  border-bottom: 1px solid black;
+
+  .container {
+    @include container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
