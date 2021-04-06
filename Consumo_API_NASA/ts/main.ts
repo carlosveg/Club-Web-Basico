@@ -12,15 +12,19 @@ const getDataAPI = async (): Promise<void> => {
 
 const generarTarjeta = ({copyright, date, explanation, title, url}): string => {
   return `
-    <section class="card">
-        <img src="${url}" alt="${title}">
-        <section class="data">
-          <h3>${title}</h3>
-          <h4>Author (copyright): ${copyright}</h4>
-          <h4>Date: ${date}</h4>
-          <p>${explanation}</p>
+    <div class="container">
+      <section class="img">
+        <figure>
+          <img src="${url}" alt="${title}">
+        </figure>
       </section>
-    </section>
+      <section class="data">
+        <h3>${title}</h3>
+        <h4>Author (copyright): ${copyright}</h4>
+        <h4>Date: ${date}</h4>
+        <p>${explanation}</p>
+      </section>
+    </div>
     `;
 };
 

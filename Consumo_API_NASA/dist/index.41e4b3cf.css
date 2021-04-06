@@ -13,11 +13,34 @@ header {
 }
 header .container {
   width: 90%;
-  max-width: 65rem;
+  max-width: 70rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+#api_info {
+  margin-top: 2rem;
+}
+#api_info .container {
+  width: 90%;
+  max-width: 70rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#api_info .container .img {
+  width: 48%;
+}
+#api_info .container .img figure img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.3rem;
+}
+#api_info .container .data {
+  width: 48%;
 }
 /*# sourceMappingURL=index.41e4b3cf.css.map */
