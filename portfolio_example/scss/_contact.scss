@@ -1,0 +1,13 @@
+@import "mixins";
+
+#contact {
+  height: 3rem;
+
+  .container {
+    @include container;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

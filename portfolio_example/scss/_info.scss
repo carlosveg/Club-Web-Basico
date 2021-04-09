@@ -1,0 +1,40 @@
+@import "mixins";
+
+#personal-info {
+  display: flex;
+
+  .container {
+    @include container;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .info {
+      width: 48%;
+
+      &__headline {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      &__info {
+        font-weight: 200;
+        color: #fff;
+      }
+    }
+
+    #image {
+      width: 25%;
+
+      figure {
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

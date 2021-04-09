@@ -2,21 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PortfolioExample</title>
-    <!-- Google Font Roboto -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
-    <!-- Custom SCSS -->
-    <link rel="stylesheet" href="./scss/index.scss" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PortfolioExample</title>
+  <!-- Google Font Roboto -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Custom SCSS -->
+  <link rel="stylesheet" href="./scss/index.scss" />
 </head>
 
 <body>
-    <header>
-        <h1>My PortfolioExample</h1>
-    </header>
+  <header id="header">
+    <section id="menu">
+      <div class="menu-icon">
+        <span class="menu-icon__line menu-icon__line-left"></span>
+        <span class="menu-icon__line"></span>
+        <span class="menu-icon__line menu-icon__line-right"></span>
+      </div>
+
+      <div class="nav">
+        <div class="nav__content">
+          <ul class="nav__list">
+            <li class="nav__list-item"><a href="#header">About</a></li>
+            <li class="nav__list-item"><a href="#projects">Projects</a></li>
+            <li class="nav__list-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Info -->
+    <section id="personal-info">
+      <div class="container">
+        <section class="info">
+          <h1 class="info__headline">Hi! I'm Carlos Vega, Programmer</h1>
+          <p class="info__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ad, optio
+            officiis aspernatur nemo doloremque enim repellat sunt porro, iure reiciendis nisi eius! Accusamus quo saepe
+            reprehenderit repellat facere magnam?
+          </p>
+        </section>
+        <section id="image">
+          <figure>
+            <img src="./assets/img/profile.png" alt="">
+          </figure>
+        </section>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="projects">
+        <div class="card">
+          <div class="overflow">
+            <img src="assets/img/profile.png" alt="" class="card-img-top" />
+          </div>
+          <div class="card-body text-light">
+            <h2 class="card-title">Project 1</h2>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe quidem culpa porro voluptatibus itaque,
+              ucimus quam exercitationem expedita quae esse natus odio labore dolorem vitae laudantium repellat,
+              veritatis hic maiores.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overflow">
+            <img src="assets/img/profile.png" alt="" class="card-img-top" />
+          </div>
+          <div class="card-body text-light">
+            <h4 class="card-title">Project 2</h4>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe quidem culpa porro voluptatibus itaque,
+              ucimus quam exercitationem expedita quae esse natus odio labore dolorem vitae laudantium repellat,
+              veritatis hic maiores.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overflow">
+            <img src="assets/img/profile.png" alt="" class="card-img-top" />
+          </div>
+          <div class="card-body text-light">
+            <h4 class="card-title">Project 3</h4>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe quidem culpa porro voluptatibus itaque,
+              ucimus quam exercitationem expedita quae esse natus odio labore dolorem vitae laudantium repellat,
+              veritatis hic maiores.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section id="contact">
+    <div class="container">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </section>
+
+  <footer></footer>
+
+  <script src="/ts/index.ts"></script>
 </body>
 
 </html>
